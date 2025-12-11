@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generación de Reportes</title>
+
+    <link rel="stylesheet" href="css/paginaweb.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="icon" href="image/logo.png" type="image/x-icon">
+
+    <style>
+
+        /* Estilo de tarjetas */
+        .card-custom {
+            background: #1e293b;
+            color: #e2e8f0;
+            border: 1px solid #38bdf8;
+            border-radius: 15px;
+            transition: 0.3s ease;
+            padding-bottom: 15px;
+        }
+
+        /* Efecto hover en tarjetas */
+        .card-custom:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 18px #38bdf8;
+        }
+
+        .card-custom img {
+            border-radius: 15px 15px 0 0;
+        }
+
+        /* Botón elegante */
+        .btn-warning {
+            background: linear-gradient(90deg, #f59e0b, #fbbf24);
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-warning:hover {
+            background: linear-gradient(90deg, #fbbf24, #f59e0b);
+            box-shadow: 0 0 10px #fbbf24;
+        }
+
+        /* Botón azul */
+        .btn-info {
+            background: linear-gradient(90deg, #3b82f6, #0ea5e9);
+            border: none;
+        }
+
+        .btn-info:hover {
+            background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+        }
+
+        /* Línea separadora brillante */
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+        }
+
+    </style>
+
+</head>
+
+<body style="background: linear-gradient(135deg, #0f172a, #1e293b); color: #fff;">
+
+<section class="container my-5">
+
+    <h2 class="text-center mb-4 text-warning fw-bold">
+        Generación de Reportes Empresariales
+    </h2>
+
+    <p class="lead text-center mb-4">
+        En este módulo podrás generar reportes detallados de proyectos, empleados y actividades,
+        así como descargar los informes en formato PDF.
+    </p>
+
+    <hr class="my-5">
+
+    <h3 class="fw-bold text-warning text-center mb-4">Panel de Reportes</h3>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- REPORTE DE PROYECTOS -->
+        <article class="col">
+            <div class="card card-custom h-100 shadow-sm">
+                <img src="image/reportepro.png" class="card-img-top" alt="Reporte de proyectos">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5 fw-bold text-info">Reporte de Proyectos</h3>
+
+                    <p class="card-text">
+                        Ver avances actuales, tareas completadas, pendientes, progreso (%) y comentarios del equipo.
+                    </p>
+
+                    <a href="reporte-proyectos.html" class="btn btn-warning w-100 fw-bold mt-3">
+                        Generar Reporte PDF
+                    </a>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- REPORTE DE EMPLEADOS -->
+        <article class="col">
+            <div class="card card-custom h-100 shadow-sm">
+                <img src="image/reporteemple.png" class="card-img-top" alt="Reporte de empleados">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5 fw-bold text-info">Reporte de Empleados</h3>
+
+                    <p class="card-text">
+                        Revisar informes enviados por empleados, resumen de actividades y estado de cada tarea.
+                    </p>
+
+                    <a href="reporte-empleados.html" class="btn btn-warning w-100 fw-bold mt-3">
+                        Generar Reporte PDF
+                    </a>
+
+                </div>
+            </div>
+        </article>
+
+        <!-- REPORTE GENERAL -->
+        <article class="col">
+            <div class="card card-custom h-100 shadow-sm">
+                <img src="image/reportegene.png" class="card-img-top" alt="Reporte general">
+
+                <div class="card-body">
+
+                    <h3 class="card-title h5 fw-bold text-info">Reporte General</h3>
+
+                    <p class="card-text">
+                        Genera un informe global con resumen de clientes, proyectos activos y estado empresarial.
+                    </p>
+
+                    <a href="reporte-general.html" class="btn btn-warning w-100 fw-bold mt-3">
+                        Generar Reporte PDF
+                    </a>
+
+                </div>
+
+            </div>
+        </article>
+
+    </div>
+
+</section>
+
+<div class="text-center mb-5">
+    <a href="Pagina_web.php" class="btn btn-info px-4 py-2 rounded-pill fw-bold">
+        Volver al Inicio
+    </a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
